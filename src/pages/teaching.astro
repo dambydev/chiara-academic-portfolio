@@ -1,0 +1,166 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Teaching - Chiara Pia D'Ambrosio" description="Teaching experience and activities">
+  <div class="teaching-page">
+    <h1>Teaching</h1>
+    
+    <section class="teaching-section">
+      <h2>Teaching Experience</h2>
+      <ul>
+        <li>
+          <strong>Strategy & Entrepreneurship Seminars</strong> (2023-2024)
+          <br />
+          PhD level - London Business School
+          <br />
+          <em>Guest lectures and discussion sessions on current research in strategy and entrepreneurship</em>
+        </li>
+        <li>
+          <strong>Financial Management Workshops</strong> (2022-2023)
+          <br />
+          Executive Education - Teaching Assistant
+          <br />
+          <em>Supporting executive education programs with practical insights from industry experience</em>
+        </li>
+        <li>
+          <strong>Research Methods in Business</strong> (2021-2022)
+          <br />
+          Graduate level - SDA Bocconi (Research Assistant)
+          <br />
+          <em>Assisting with quantitative methods courses and student supervision</em>
+        </li>
+      </ul>
+    </section>
+
+    <section class="teaching-section">
+      <h2>Teaching Interests</h2>
+      <p>I am passionate about teaching and plan to develop courses in the following areas:</p>
+      <ul>
+        <li><strong>Strategic Management:</strong> Corporate strategy, competitive advantage, and strategic decision-making</li>
+        <li><strong>Entrepreneurship:</strong> New venture creation, innovation, and entrepreneurial finance</li>
+        <li><strong>Financial Management:</strong> Corporate finance, financial analysis, and control systems</li>
+        <li><strong>Research Methods:</strong> Quantitative and qualitative research methods in business</li>
+      </ul>
+    </section>
+
+    <section class="teaching-section">
+      <h2>Professional Development</h2>
+      <ul>
+        <li>
+          <strong>Teaching Development Workshop</strong>
+          <br />
+          London Business School - 2023
+          <br />
+          <em>Participated in pedagogical training focused on effective teaching methods for business education</em>
+        </li>
+        <li>
+          <strong>Academic Presentation Skills</strong>
+          <br />
+          Various conferences and seminars - 2022-2024
+          <br />
+          <em>Developed presentation and communication skills through conference presentations and academic discussions</em>
+        </li>
+        <li>
+          <strong>Industry Experience Integration</strong>
+          <br />
+          Based on previous roles at Luxottica, PwC, and SDA Bocconi
+          <br />
+          <em>Bringing real-world experience to academic discussions and case study development</em>
+        </li>
+      </ul>
+    </section>
+
+    <section class="teaching-section">
+      <h2>Future Teaching Goals</h2>
+      <p>
+        As I progress in my doctoral studies, I aim to develop innovative teaching methods that bridge 
+        the gap between academic theory and practical application. My industry experience in finance 
+        and consulting, combined with my research focus on strategy and entrepreneurship, allows me 
+        to bring a unique perspective to business education.
+      </p>
+      <p>
+        I am particularly interested in developing case studies based on real-world scenarios and 
+        creating interactive learning experiences that help students understand the complexity of 
+        strategic decision-making in modern organizations.
+      </p>
+    </section>
+  </div>
+</MainLayout>
+
+<style>
+  .teaching-page {
+    margin-top: 1rem;
+  }
+
+  .teaching-section {
+    margin-bottom: 3rem;
+  }
+
+  .teaching-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .teaching-section li {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #fafafa;
+    border-left: 3px solid var(--color-blue-institutional);
+    border-radius: 0 4px 4px 0;
+    animation: fadeInRight 0.5s ease-out calc(0.1s * var(--item-index, 0)) both;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .teaching-section li:nth-child(1) { --item-index: 1; }
+  .teaching-section li:nth-child(2) { --item-index: 2; }
+  .teaching-section li:nth-child(3) { --item-index: 3; }
+  .teaching-section li:nth-child(4) { --item-index: 4; }
+
+  .teaching-section li:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left-width: 5px;
+  }
+
+  .teaching-section li strong {
+    color: var(--color-blue-institutional);
+    font-size: 1.1rem;
+  }
+
+  .teaching-section li em {
+    color: var(--color-gray-muted);
+    font-size: 0.95rem;
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .teaching-section p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  .teaching-section ul:last-child {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+
+  .teaching-section ul:last-child li {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .teaching-section:nth-child(2) ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+
+  .teaching-section:nth-child(2) ul li {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 0.75rem;
+  }
+</style>

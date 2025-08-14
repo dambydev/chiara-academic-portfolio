@@ -1,0 +1,63 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Sito accademico personale" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+  <Header />
+  <main class="container">
+    <slot />
+  </main>
+  <Footer />
+</body>
+</html>
+
+<style>
+  main {
+    min-height: calc(100vh - 200px);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  /* Animazione per il cambio pagina */
+  main > * {
+    animation: slideIn 0.5s ease-out;
+  }
+
+  /* Hover effects per i link di navigazione */
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+  /* Riduce le animazioni per utenti che preferiscono movimento ridotto */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>

@@ -1,0 +1,13 @@
+PLACEHOLDER IMAGE FILE
+
+Questo è un file placeholder per l'immagine del profilo.
+Sostituire con la propria foto professionale in formato JPG o PNG.
+
+Dimensioni consigliate: 400x400 pixel o superiori
+Formato: JPG o PNG
+Nome file: profile-image.jpg
+
+Per sostituire questo file:
+1. Preparare la propria foto professionale
+2. Rinominare il file come "profile-image.jpg"
+3. Sostituire questo file nella cartella /public/assets/

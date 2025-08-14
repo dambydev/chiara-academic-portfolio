@@ -1,0 +1,59 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="CV - Chiara Pia D'Ambrosio" description="Curriculum Vitae">
+  <div class="cv-page">
+    <h1>Curriculum Vitae</h1>
+    <p class="cv-description">
+      View my complete curriculum vitae in the document below. 
+      You can also <a href="https://assets.london.edu/hxo16fanegqh/7d5e564e-1afd-4676-a711-18571400cba4/779d8c27c90e643e6a28a2f35f324c6e/cv-chiara-dambrosio.pdf" target="_blank" rel="noopener">download it as PDF</a>.
+    </p>
+    
+    <div class="cv-container">
+      <iframe 
+        src="https://assets.london.edu/hxo16fanegqh/7d5e564e-1afd-4676-a711-18571400cba4/779d8c27c90e643e6a28a2f35f324c6e/cv-chiara-dambrosio.pdf" 
+        class="cv-iframe"
+        title="Curriculum Vitae - Chiara Pia D'Ambrosio"
+      >
+        <p>
+          Your browser does not support PDF viewing. 
+          <a href="https://assets.london.edu/hxo16fanegqh/7d5e564e-1afd-4676-a711-18571400cba4/779d8c27c90e643e6a28a2f35f324c6e/cv-chiara-dambrosio.pdf" target="_blank" rel="noopener">Click here to download it</a>.
+        </p>
+      </iframe>
+    </div>
+  </div>
+</MainLayout>
+
+<style>
+  .cv-page {
+    margin-top: 1rem;
+  }
+
+  .cv-description {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--color-gray-muted);
+  }
+
+  .cv-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cv-iframe {
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
+    border: 1px solid var(--color-gray-light);
+    border-radius: 4px;
+    background-color: #f8f9fa;
+  }
+
+  @media (max-width: 768px) {
+    .cv-iframe {
+      height: 70vh;
+      min-height: 500px;
+    }
+  }
+</style>
