@@ -4,7 +4,6 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 <MainLayout title="About - Chiara Pia D'Ambrosio">
   <div class="about-page">
-    <div class="about-background"></div>
     <div class="about-content">
       <div class="two-column">
         <div class="profile-section">
@@ -81,37 +80,17 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 <style>
   .about-page {
-    position: relative;
     margin-top: 1rem;
     min-height: 80vh;
   }
 
-  .about-background {
-    position: absolute;
-    top: -2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    height: calc(100% + 4rem);
-    background-image: url('/assets/lbs_bg.avif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(3px);
-    opacity: 0.2;
-    z-index: -1;
-  }
-
   .about-content {
-    position: relative;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.92);
-    backdrop-filter: blur(10px);
+    background: var(--color-white);
     border-radius: 12px;
     padding: 3rem;
     margin: 2rem 0;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--color-gray-light);
   }
 
   .contact-section {
